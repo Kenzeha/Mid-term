@@ -84,6 +84,9 @@ nav a:hover{text-shadow:0 0 8px black;}
     margin-bottom: 20px;
     line-height: 1.6;
 }
+section a{
+    text-decoration: none;
+}
 
 
 
