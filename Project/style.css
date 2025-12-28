@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+    header{
+    flex-direction: column;
+    padding: 2em;
+    }
+
+    nav {
+    margin-top: 5px;
+    }
+
+    section.background1 {
+    width: auto;
+    padding: 3em;
+    }
+    div.content1{
+        padding: 1.8em;
+    }
+}
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -12,7 +31,7 @@ body{
 
 header{ 
     background: linear-gradient(to right,#ddb4f6,#8dd0fc);
-    padding: 20px 60px;
+    padding: 20px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,24 +39,26 @@ header{
 
 header h1 {
     font-size: 28px; 
-    color: white;
     letter-spacing: 1px; 
     transition: text-shadow 0.3s ease;
     cursor:pointer;
 }
-header h1 a{text-decoration: none;}
-
+header h1 a{
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to right,#8364e8,#d397fa);
+    background-clip: text;
+}
 header h1:hover{text-shadow: 0 0 10px rgba(145, 116, 251, 0.867);}
-
 header h1:active{background-color: none;color: white;}
 
-nav a{
-    margin-left: 25px; 
-    text-decoration: none; 
-    font-weight: 500; 
-    color: aliceblue;
+nav {
+    width: fit-content;
+    font-size: 15px; 
+    font-weight: 600;
 }
-nav a:hover{text-decoration: underline;}
+nav a{padding: 10px 10px;text-decoration: none;color: rgb(236, 236, 236);transition: 0.5s;}
+nav a:hover{text-shadow:0 0 8px black;}
 
 .background1{
     height: 90vh;
@@ -47,10 +68,11 @@ nav a:hover{text-decoration: underline;}
     padding: 0 70px;
 }
 .content1{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.577);
     padding: 40px;
     border-radius: 15px;
     max-width: 480px;
+    width: clamp(400px,50vw,800px);
 }
 
 .content1 h2{
@@ -61,4 +83,18 @@ nav a:hover{text-decoration: underline;}
 .content1 p{
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+
+
+
+footer{
+    background: linear-gradient(to right, #f292ed, #f36364);
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
 }
