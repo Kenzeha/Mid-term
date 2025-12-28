@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
     header{
     flex-direction: column;
-    padding: 2em;
     }
 
     nav {
@@ -14,6 +13,10 @@
     }
     div.content1{
         padding: 1.8em;
+    }
+
+    footer {
+        padding: 8px;
     }
 }
 
@@ -31,7 +34,7 @@ body{
 
 header{ 
     background: linear-gradient(to right,#ddb4f6,#8dd0fc);
-    padding: 20px 45px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,8 +99,4 @@ footer{
     color: aliceblue;
     padding: 10px;
     text-align: center;
-}
-
-footer p{
-    font-size: 20px;
 }
