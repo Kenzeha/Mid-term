@@ -7,8 +7,6 @@
 }
 .header{
     background: linear-gradient(to right,#ddb4f6,#8dd0fc);
-    padding: 18px 40px;
-    flex-wrap:wrap;
 }
 
 .logo {
@@ -27,14 +25,6 @@
     background-clip: text;
 }
 
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-}
-
 .menu li{
     font-size: 14px;
     letter-spacing: 1px;
@@ -46,11 +36,6 @@
 .menu li:hover{
     text-shadow: 0 0 8px black;
     color: white;
-}
-
-.menu a{
-    text-decoration: none;
-    color: inherit;
 }
 
 .icons {
