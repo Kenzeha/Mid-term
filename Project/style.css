@@ -1,3 +1,4 @@
+@import "tailwindcss";
 
 * { 
     margin: 0; 
@@ -7,13 +8,9 @@
 }
 .header{
     background: linear-gradient(to right,#ddb4f6,#8dd0fc);
-    padding: 18px 40px;
-    flex-wrap:wrap;
 }
 
 .logo {
-    font-size: 28px; 
-    letter-spacing: 1px; 
     transition: text-shadow 0.3s ease;
     cursor:pointer;
 }
@@ -21,46 +18,10 @@
 .logo:active{background-color: none;color: white;}
 
 .logo a {
-    text-decoration: none;
     color: transparent;
     background: linear-gradient(to right,#8364e8,#d397fa);
     background-clip: text;
 }
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-}
-
-.menu li{
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    color: rgb(236, 236, 236);
-    transition: text-shadow 0.5s ease, color 0.3s ease;
-}
-
-.menu li:hover{
-    text-shadow: 0 0 8px black;
-    color: white;
-}
-
-.menu a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 18px;
-    margin-left: auto;
-}
-
 
 .background1{
     height: 90vh;
