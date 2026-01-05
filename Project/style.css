@@ -1,64 +1,27 @@
-@media (max-width: 768px) {
-    header{
-    flex-direction: column;
-    padding: 2em;
-    }
-
-    nav {
-    margin-top: 5px;
-    }
-
-    section.background1 {
-    width: auto;
-    padding: 3em;
-    }
-    div.content1{
-        padding: 1.8em;
-    }
-}
+@import "tailwindcss";
 
 * { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
-    font-family: "Poppins", sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body{ 
-    background: rgb(252, 245, 253);
-    color: rgb(65, 69, 72);
-}
-
-header{ 
+.header{
     background: linear-gradient(to right,#ddb4f6,#8dd0fc);
-    padding: 20px 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header h1 {
-    font-size: 28px; 
-    letter-spacing: 1px; 
+.logo {
     transition: text-shadow 0.3s ease;
     cursor:pointer;
 }
-header h1 a{
-    text-decoration: none;
+.logo:hover{text-shadow: 0 0 10px rgba(145, 116, 251, 0.867);}
+.logo:active{background-color: none;color: white;}
+
+.logo a {
     color: transparent;
     background: linear-gradient(to right,#8364e8,#d397fa);
     background-clip: text;
 }
-header h1:hover{text-shadow: 0 0 10px rgba(145, 116, 251, 0.867);}
-header h1:active{background-color: none;color: white;}
-
-nav {
-    width: fit-content;
-    font-size: 15px; 
-    font-weight: 600;
-}
-nav a{padding: 10px 10px;text-decoration: none;color: rgb(236, 236, 236);transition: 0.5s;}
-nav a:hover{text-shadow:0 0 8px black;}
 
 .background1{
     height: 90vh;
@@ -100,8 +63,4 @@ footer{
     color: aliceblue;
     padding: 10px;
     text-align: center;
-}
-
-footer p{
-    font-size: 20px;
 }
