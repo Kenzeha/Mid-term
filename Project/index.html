@@ -7,35 +7,55 @@
         <title>Project1</title>
         <meta name="Description" content="This is just for school project!">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body style="background: rgb(252, 245, 253);color: rgb(65, 69, 72)">
-        <header class="header py-2 px-7 ">
-            <nav class="flex items-center text-lg px-2">
-                <h1 class="logo font-bold text-3xl">
-                    <a href="index.html">Lunator Cosmetic</a>
+        <header class="bg-gradient-to-r from-purple-300 to-blue-300 py-4 px-4 md:px-6">
+            <nav class="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+                <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-400 cursor-pointer transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(192,132,252,0.8)] hover:brightness-110">
+                    <a href="index.html" >Lunator Cosmetic</a>
                 </h1>
-                <ul class="flex gap-7 mx-auto items-center font-semibold text-amber-50 space-x-2 ">
-                    <li class="transition-all duration-300 hover:scale-110 hover:text-pink-600"><a href="#" class="drop-shadow-md">What's New</a></li>
-                    <li class="transition-all duration-300 hover:scale-110 hover:text-pink-600"><a href="#" class="drop-shadow-md">Products</a></li>
-                    <li class="transition-all duration-300 hover:scale-110 hover:text-pink-600"><a href="#" class="drop-shadow-md">Trending</a></li>
-                    <li class="transition-all duration-300 hover:scale-110 hover:text-pink-600"><a href="#" class="drop-shadow-md">Stores</a></li>
-                </ul>
 
-                <div class="flex items-center gap-9 text-2xl text-[#E3F2FD]">
-                    <a href="#" class="fa-regular fa-user duration-500 hover:scale-110 hover:text-black/70" role="button"></a>
-                    <a href="#" class="fa-solid fa-magnifying-glass duration-500 hover:scale-110 hover:text-black/70" role="button"></a>
-                    <div class="cart">
-                        <a href="#" class="fa-solid fa-bag-shopping duration-500 hover:scale-110 hover:text-black/70" role="button"></a>
-                        <span class="badge"></span>
+                <div class="flex items-center gap-4">
+                    <ul class="hidden md:flex gap-6 text-white font-semibold md:pr-5 text-[19px]">
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">What's New</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Products</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Trending</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Stores</a></li>
+                    </ul>
+
+                    <div class="flex items-center gap-6 text-2xl text-white">
+                        <a href="#" class="fa-regular fa-user hover:text-black/70 hover:scale-110 transition-all"></a>
+                        <a href="#" class="fa-solid fa-magnifying-glass hover:text-black/70 hover:scale-110 transition-all"></a>
+                        <div class="relative">
+                            <a href="#" class="fa-solid fa-bag-shopping hover:text-black/70 hover:scale-110 transition-all"></a>
+                            <spanx class="absolute -top-2 -right-2 bg-[#212738]/80 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
                     </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-2xl text-white pr-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
             </nav>
+            <ul id="mobile-menu" class="hidden flex-col w-full text-center items-center gap-4 mt-4 text-white font-semibold md:hidden ">
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">What's New</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Products</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Trending</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Stores</a></li>
+            </ul>
         </header>
 
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
         <main>
-            <section class="background1">
+            <section class="bg-[url('Picture/background1.jpg')] bg-cover bg-center min-h-[90vh] flex items-center px-4 md:px-16">
                 <div class="content1">
                     <h2 class="font-bold drop-shadow-md">Glow Naturally</h2>
                     <p>Discover premium beauty cosmetics crafted with care, elegance, and confidence. Enhance your natural beauty with Lunator.</p>
@@ -44,40 +64,40 @@
                     </div>    
                 </div>
             </section>
-            <section class="shop-section section">
-                <div class="container-grid pt-8 pb-12 pr-4 pl-4">
+            <section class="shop-section section ">
+                <div class="container-grid pt-6 pb-10 px-3">
                     <div>
                         <h3 class="text-3xl font-bold text-center mb-6">Category</h3>
                     </div>
                     <div class="relative overflow-x-auto fade-in in-view " data-transition-enabled="true" data-scroll-transition="fade">
-                        <ul id="Slider" class="flex flex-nowrap md:grid md:grid-cols-4 gap-4 justify-items-center" role="list" aria-label="Slider">
-                            <li class="grow min-w-[150px]">
-                                <a href="#" target class="cursor-pointer hover:sursor-pointer" >
-                                    <div class="relative aspect-square overflow-hidden rounded-lg">
+                        <ul id="Slider" class="flex overflow-x-auto gap-4 md:grid md:grid-cols-4 md:overflow-visible">
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:sursor-pointer" >
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
                                         <img src="Picture/category1.webp" alt="Woman's face applying skin care" srcset="Picture/category1.webp " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
                                         <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Face</h3>
                                     </div>
                                 </a>
                             </li>
-                            <li class="grow">
-                                <a href="#" target class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative aspect-square overflow-hidden rounded-lg">
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:sursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
                                         <img src="Picture/category2.jpg" alt="Eyes of woman make up" srcset="Picture/category2.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
                                         <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Eyes</h3>
                                     </div>
                                 </a>
                             </li>
-                            <li class="grow">
-                                <a href="#" target class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative aspect-square overflow-hidden rounded-lg">
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:sursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
                                         <img src="Picture/category3.jpg" alt="Woman's face applying skin care" srcset="Picture/category3.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
                                         <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Lips</h3>
                                     </div>
                                 </a>
                             </li>
-                            <li class="grow">
-                                <a href="#" target class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative aspect-square overflow-hidden rounded-lg">
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:sursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
                                         <img src="Picture/category4.jpg" alt="Woman's face applying skin care" srcset="Picture/category4.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
                                         <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Nails</h3>
                                     </div>
