@@ -14,24 +14,24 @@
             <nav class="flex flex-col md:flex-row items-center justify-between w-full gap-4">
                 <h1 class="cursor-pointer transition-all duration-300 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">
                     <a href="index.html" >
-                        <img src="Picture/logo.png" alt="Lunator Cosmetic" class="h-10 md:h-14 w-auto object-contain">
+                        <img src="Picture/logo.png" alt="Lunator Cosmetic" class="h-10 md:h-14 w-auto object-contain reveal">
                     </a>
                 </h1>
 
-                <div class="flex items-center gap-4">
-                    <ul class="hidden md:flex gap-6 text-white font-semibold md:pr-5 text-[19px]">
-                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">What's New</a></li>
-                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Products</a></li>
-                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Trending</a></li>
-                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#" class="drop-shadow-md">Stores</a></li>
+                <div class="flex items-center gap-4 ">
+                    <ul class="hidden md:flex gap-6 text-white font-semibold md:pr-5 text-[19px] reveal">
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#whats-new" class="drop-shadow-md">What's New</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#shop-section" class="drop-shadow-md">Products</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#Trending" class="drop-shadow-md">Trending</a></li>
+                        <li class="transition-all duration-300 hover:scale-110 hover:text-[#CD5D67]"><a href="#Store" class="drop-shadow-md">Stores</a></li>
                     </ul>
 
-                    <div class="flex items-center gap-6 text-2xl text-white">
+                    <div class="flex items-center gap-6 text-2xl text-white reveal">
                         <a href="#" class="fa-regular fa-user hover:text-black/70 hover:scale-110 transition-all"></a>
                         <a href="#" class="fa-solid fa-magnifying-glass hover:text-black/70 hover:scale-110 transition-all"></a>
                         <div class="relative">
                             <a href="#" class="fa-solid fa-bag-shopping hover:text-black/70 hover:scale-110 transition-all"></a>
-                            <spanx class="absolute -top-2 -right-2 bg-[#212738]/80 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                            <span class="absolute -top-2 -right-2 bg-[#212738]/80 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
                     </div>
 
                     <button id="mobile-menu-btn" class="md:hidden text-2xl text-white pr-2">
@@ -39,13 +39,128 @@
                     </button>
                 </div>
             </nav>
-            <ul id="mobile-menu" class="hidden flex-col w-full text-center items-center gap-4 mt-4 text-white font-semibold md:hidden ">
-                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">What's New</a></li>
-                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Products</a></li>
-                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Trending</a></li>
-                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#">Stores</a></li>
+            <ul id="mobile-menu" class="hidden flex-col w-full text-center items-center gap-4 mt-4 text-white font-semibold md:hidden reveal">
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#whats-new">What's New</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#shop-section">Products</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#Trending">Trending</a></li>
+                <li class="hover:text-pink-400 transition-colors duration-200 py-1"><a href="#Store">Stores</a></li>
             </ul>
         </header>
+        <main>
+<!--Home-->
+            <section class="bg-[url('Picture/background1.jpg')] bg-cover bg-center min-h-[90vh] flex items-center px-4 md:px-16 reveal">
+                <div class="content1 reveal">
+                    <h2 class="font-bold drop-shadow-md">Glow Naturally</h2>
+                    <p>Discover premium beauty cosmetics crafted with care, elegance, and confidence. Enhance your natural beauty with Lunator.</p>
+                    <div class="flex bg-pink-300/75 w-24 h-9 rounded-xl justify-center items-center" >
+                        <a href="#Store" class="font-bold text-white/85 drop-shadow-md duration-300 hover:scale-105 hover:shadow-2xl" >Shop Now</a>
+                    </div>    
+                </div>
+            </section>
+<!--What's New-->
+            <section id="whats-new" class="flex justify-center py-4 reveal">
+                <div class="px-2 md:px-0">
+                    <h3 class="text-center py-3 font-bold text-[22px] md:text-[32px] transition-all text-black/70 drop-shadow-md">New Products</h3>
+                    <a href="#" class="px-0.5 overflow-hidden">
+                        <img src="Picture/What's new2.png" alt="New Products for Lunator" class="w-full h-[400px] md:h-auto object-cover md:object-contain rounded-2xl shadow-2xl transition-all duration-500 hover:scale-105" loading="lazy" >
+                    </a>
+                </div>
+            </section>
+<!--Category-->
+            <section id="shop-section" class="pb-10">
+                <div class="container-grid pt-6 pb-10 px-3">
+                    <div>
+                        <h3 class="text-3xl font-bold text-center mb-6 reveal">Category</h3>
+                    </div>
+                    <div class="relative overflow-x-auto fade-in in-view " data-transition-enabled="true" data-scroll-transition="fade">
+                        <ul id="Slider" class="flex overflow-x-auto gap-4 md:grid md:grid-cols-4 md:overflow-visible text-[25px] reveal">
+                            <li class="shrink-0 w-40 md:w-auto ">
+                                <a href="#" class="cursor-pointer hover:cursor-pointer" >
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <img src="Picture/category1.webp" alt="Woman's face applying skin care" srcset="Picture/category1.webp " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
+                                        <h3 class="font-display  absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Face</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:cursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <img src="Picture/category2.jpg" alt="Eyes of woman make up" srcset="Picture/category2.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
+                                        <h3 class="font-display  absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Eyes</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:cursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <img src="Picture/category3.jpg" alt="Woman's face applying skin care" srcset="Picture/category3.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
+                                        <h3 class="font-display  absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Lips</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shrink-0 w-40 md:w-auto">
+                                <a href="#" class="cursor-pointer hover:cursor-pointer">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <img src="Picture/category4.jpg" alt="Woman's face applying skin care" srcset="Picture/category4.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
+                                        <h3 class="font-display  absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Nails</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<!--Trending-->
+            <section id="Trending" class="px-4 md:px-16 py-14 bg-white reveal">
+                <div class="flex flex-col md:flex-row gap-10">
+                 
+                    <div class="md:w-1/4">
+                        <h3 class="text-3xl font-bold mb-4 md:mb-9 text-[#EB5160]">#TRENDING PRODUCTS</h3>
+                        <p class="text-gray-500 leading-relaxed ">Discover our most-loved beauty essentials, chosen by customers for their quality, elegance, and lasting glow. Elevate your routine with Lunator’s trending cosmetics.</p>
+                    </div>
+          
+                    <div class="md:w-2/3">
+                        <ul class="flex gap-8 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible" id="trendingSlider">
+                                <li class="snap-center shrink-0 w-72 md:w-auto text-base">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
+                                        <img src="Picture/Face_Serum.png" alt="Face Serum" class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                                    </div>
+                                    <h4 class="uppercase font-semibold text-gray-500 mb-3 text-[20px]">Hydration Serum</h4>
+                                    <p class="text-gray-700 mb-3">$15.00</p>
+                                    <button class="border border-pink-300 text-pink-500 px-6 py-2 text-sm hover:bg-pink-500 hover:text-white transition">ADD TO BAG</button>    
+                                </li>
+
+                                <li class="snap-center shrink-0 w-72 md:w-auto text-base">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
+                                        <img src="Picture/Lip_gloss.png" alt="Lip Gloss" class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                                    </div>
+                                    <h4 class="uppercase font-semibold text-gray-500 mb-3 text-[20px]">Lip Gloss</h4>
+                                    <p class="text-gray-700 mb-3">$8.00</p>
+                                    <button class="border border-pink-300 text-pink-500 px-6 py-2 text-sm hover:bg-pink-500 hover:text-white transition">ADD TO BAG</button>    
+                                </li>
+                                
+                                <li class="snap-center shrink-0 w-72 md:w-auto text-base">
+                                    <div class="relative w-full aspect-square overflow-hidden rounded-xl shadow-xl mb-4">
+                                        <img src="Picture/Eyes_product.png" alt="Eyes Product" class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+                                    </div>
+                                    <h4 class="uppercase font-semibold text-gray-500 mb-3 text-[20px]">Eyeliner</h4>
+                                    <p class="text-gray-700 mb-3">$5.00</p>
+                                    <button class="border border-pink-300 text-pink-500 px-6 py-2 text-sm hover:bg-pink-500 hover:text-white transition">ADD TO BAG</button>    
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<!--Store-->
+            <section id="Store" class="flex-row text-center py-[40vh] ">
+                <div class ="">
+                    <h2 class="font-bold text-[40px] text-[#D5573B]">What is in the Store!</h2>
+                    <p class="text-#BCB8B1/80">Well there are nothing :( </p>
+                </div>
+            </section>
+
+        </main> 
+    </body>
 
 <script>
   const btn = document.getElementById('mobile-menu-btn');
@@ -56,75 +171,25 @@
   });
 </script>
 
-        <main>
-            <section class="bg-[url('Picture/background1.jpg')] bg-cover bg-center min-h-[90vh] flex items-center px-4 md:px-16">
-                <div class="content1">
-                    <h2 class="font-bold drop-shadow-md">Glow Naturally</h2>
-                    <p>Discover premium beauty cosmetics crafted with care, elegance, and confidence. Enhance your natural beauty with Lunator.</p>
-                    <div class="flex bg-pink-300/75 w-24 h-9 rounded-xl justify-center items-center" >
-                        <a href="#" class="font-bold text-white/85 drop-shadow-md duration-300 hover:scale-105 hover:shadow-2xl" >Shop Now</a>
-                    </div>    
-                </div>
-            </section>
-
-            <section class="flex justify-center pb-4 ">
-                <div class="px-2 md:px-0">
-                    <h3 class="text-center py-3 font-bold text-[15px] md:text-[32px] transition-all text-black/70 drop-shadow-md">New Products</h3>
-                    <img src="Picture/What's new2.png" alt="New Products for Lunator" class="w-full h-[400px] md:h-auto object-cover md:object-contain rounded-2xl shadow-2xl transition-all duration-500" loading="lazy" >
-                </div>
-            </section>
-
-            <section class="shop-section section ">
-                <div class="container-grid pt-4 pb-10 px-3">
-                    <div>
-                        <h3 class="text-3xl font-bold text-center mb-6">Category</h3>
-                    </div>
-                    <div class="relative overflow-x-auto fade-in in-view " data-transition-enabled="true" data-scroll-transition="fade">
-                        <ul id="Slider" class="flex overflow-x-auto gap-4 md:grid md:grid-cols-4 md:overflow-visible">
-                            <li class="shrink-0 w-40 md:w-auto">
-                                <a href="#" class="cursor-pointer hover:sursor-pointer" >
-                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
-                                        <img src="Picture/category1.webp" alt="Woman's face applying skin care" srcset="Picture/category1.webp " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
-                                        <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Face</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="shrink-0 w-40 md:w-auto">
-                                <a href="#" class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
-                                        <img src="Picture/category2.jpg" alt="Eyes of woman make up" srcset="Picture/category2.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
-                                        <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Eyes</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="shrink-0 w-40 md:w-auto">
-                                <a href="#" class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
-                                        <img src="Picture/category3.jpg" alt="Woman's face applying skin care" srcset="Picture/category3.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
-                                        <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Lips</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="shrink-0 w-40 md:w-auto">
-                                <a href="#" class="cursor-pointer hover:sursor-pointer">
-                                    <div class="relative w-full aspect-square overflow-hidden rounded-lg">
-                                        <img src="Picture/category4.jpg" alt="Woman's face applying skin care" srcset="Picture/category4.jpg " w-full h-full loading="lazy" sizes="100vw" fetchpriority="auto" class="hover:scale-110 transition-all duration-500 cursor-pointer rounded-lg">
-                                        <h3 class="font-display absolute bottom-0 z-10 mb-0 w-full py-2 text-center font-bold text-white">Nails</h3>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-        </main> 
-    </body>
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+        entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {entry.target.classList.add('active');}
+        });
+        },
+        {threshold: 0.15});
+    reveals.forEach(el => observer.observe(el));
+</script>
 
     <footer>
-        <div>
-        <p>© 2026 Lunator cosmetics.</p>
-        <p>This website was create for school project | Western University</p>
+        <div class="flex flex-col col-span-5 justify-evenly lg:col-span-3 lg:flex-row">
+            <div class="text-center">About Us
+                <p>A collge student just try to build a website.</p>
+            </div><br>
+            <p>© 2026 Lunator cosmetics.</p><br>
+            <p>This website was create for school project | Western University</p>
         </div>  
     </footer>
 </html>
