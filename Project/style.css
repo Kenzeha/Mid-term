@@ -35,7 +35,8 @@
 #Slider {
     overflow-x: auto;
     scrollbar-width: none;       
-    -ms-overflow-style: none;     
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;     
 }
 
 #Slider::-webkit-scrollbar {
@@ -86,7 +87,16 @@ section a{
 
 footer{
     background: linear-gradient(to right, #f292ed, #f36364);
-    color: aliceblue;
     padding: 10px;
-    text-align: center;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
